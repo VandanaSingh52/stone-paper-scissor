@@ -4,33 +4,33 @@ def gameWin(computer, you):
     if computer == you:
         return None
 
-    elif computer == 'stone':
-        if you == 'paper':
+    elif computer == 's':
+        if you == 'p':
             return True
-        elif you == 'scissor':
+        elif you == 'c':
             return False 
 
-    elif computer == 'paper':
-        if you == 'scissor':
+    elif computer == 'p':
+        if you == 'c':
             return True
-        elif you == 'stone':
+        elif you == 's':
             return False   
              
-    elif computer == 'scissor':
-        if you == 'stone':
+    elif computer == 'c':
+        if you == 's':
             return True
-        elif you == 'paper':
+        elif you == 'p':
             return False        
         
-you = input("your's turn: choose stone(stone), paper(paper) and scissor(scissor) ?  ")
-computer = print("computer's turn: choose stone(stone), paper(paper) and scissor(scissor) ?  ")
+you = input("your's turn: choose stone(s), paper(p) and scissor(c) ?  ")
+computer = print("computer's turn: choose stone(s), paper(p) and scissor(c) ?  ")
 random_no = random.randint(1,3)
 if random_no == 1:
-    computer = 'stone'
+    computer = 's'
 elif random_no == 2:
-    computer = 'paper'
+    computer = 'p'
 elif random_no == 3:
-    computer = 'scissor' 
+    computer = 'c' 
 
 print(f"computer chose {computer}")
 
